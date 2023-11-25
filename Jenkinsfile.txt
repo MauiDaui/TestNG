@@ -10,6 +10,10 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                script {
+                    // Run TestNG tests using the testng.xml file
+                    sh 'mvn test -DsuiteXmlFile=testng.xml'
+                }
             }
         }
         stage('Deploy') {
