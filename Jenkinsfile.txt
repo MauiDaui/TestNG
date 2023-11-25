@@ -5,14 +5,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		bat 'mvn clean'
+		//bat 'mvn clean'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
                 script {
-                    	bat 'mvn test -DsuiteXmlFile=src/test/resources/testng.xml'
+                    	bat 'mvn clean test -DsuiteXmlFile=src/test/resources/testng.xml'
                 }
             }
         }
