@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG Suite">
+    <test name="TestNG Test">
+        <classes>
+            <class name="TestNG_DataProvider">
+                <methods>
+                     <include name="search" />
+                    
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
