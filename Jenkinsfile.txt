@@ -11,8 +11,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 script {
-                    // Run TestNG tests using the testng.xml file
-                    sh 'mvn test -DsuiteXmlFile=src/test/resources/testng.xml'
+                    	sh 'mvn test -DsuiteXmlFile=src/test/resources/testng.xml'
                 }
             }
         }
