@@ -11,7 +11,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 script {
-                    	sh 'mvn test -DsuiteXmlFile=src/test/resources/testng.xml'
+                    	bat 'mvn test -DsuiteXmlFile=src/test/resources/testng.xml'
                 }
             }
         }
